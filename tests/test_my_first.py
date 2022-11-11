@@ -1,4 +1,5 @@
 import pytest
+import time
 from demo.my_logger import my_logger
 
 def test_sum():
@@ -11,6 +12,7 @@ def test_sum():
 
 def test_sum_2():
     my_logger.error("todo lo que queramos 3")
+    time.sleep(20)
     assert 2 == 2, "la suma es diferente a 2"
 
 def test_sum_3():
